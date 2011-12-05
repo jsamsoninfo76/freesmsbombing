@@ -5,8 +5,11 @@
 	<string name="message">Message</string>
 	<string name="envoyer">Envoyer</string>
 	<string name="compteur">Compteur</string>
+	
 	<string name="quitter">Leave</string>
 	<string name="partager">Partager avec ...</string>
+	<string name="com">Commentaire</string>
+	<string name="com_msg">Ecrire un commentaire au développeur</string>
 	
 	<string name="erreurContact_recup_num">Erreur de récupération du numéro.</string>
 	<string name="erreurContact_no_num">Pas de numéro trouvé pour le contact.</string>

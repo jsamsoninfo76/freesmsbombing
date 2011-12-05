@@ -8,4 +8,8 @@
         android:id="@+id/partager"
         android:icon="@android:drawable/ic_menu_share"
         android:title="@string/partager"></item>
+	<item
+        android:id="@+id/com"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="@string/com"></item>
 </menu>
