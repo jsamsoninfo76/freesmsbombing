@@ -5,8 +5,11 @@
 	<string name="message">Nachricht</string>
 	<string name="envoyer">Gesendet</string>
 	<string name="compteur">Zähler</string>
+	
 	<string name="quitter">Verlassen</string>
 	<string name="partager">Mit... teilen</string>
+	<string name="com">Kommentar</string>
+	<string name="com_msg">Schreiben Sie einen Kommentar für den Entwickler</string>
 	
 	<string name="erreurContact_recup_num">Fehler bei Wiedererholung der Nummer.</string>
 	<string name="erreurContact_no_num">Für den Kontakt gefunden.</string>

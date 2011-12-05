@@ -5,9 +5,12 @@
 	<string name="message">Message</string>
 	<string name="envoyer">Send</string>
 	<string name="compteur">How many</string>
+	
 	<string name="quitter">Leave</string>
 	<string name="partager">Share with ...</string>
-	
+	<string name="com">Comment</string>
+	<string name="com_msg">Write a comment to the developer</string>
+		
 	<string name="erreurContact_recup_num">Can t get the correct number.</string>
 	<string name="erreurContact_no_num">No phone number for this contact.</string>
 	<string name="erreurContact_button">Error with the contact button.</string>

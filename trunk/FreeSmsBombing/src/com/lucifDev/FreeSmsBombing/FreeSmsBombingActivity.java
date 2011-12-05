@@ -1,7 +1,11 @@
 package com.lucifDev.FreeSmsBombing;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
@@ -17,6 +21,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.ads.AdRequest;
@@ -54,9 +59,15 @@ public class FreeSmsBombingActivity extends Activity {
         cpt = (EditText)findViewById(R.id.cpt);
         message = (EditText)findViewById(R.id.message);
         
-     // Look up the AdView as a resource and load a request.
+        /*******************************
+         * Ajout de la pub admob       *
+         *******************************/
         AdView adView = (AdView)this.findViewById(R.id.adView);
         adView.loadAd(new AdRequest());
+        
+        
+        
+        
         
         //Ajout du premier Listener sur le boutton contact pour les afficher
         contact.setOnClickListener(new OnClickListener(){
@@ -97,6 +108,28 @@ public class FreeSmsBombingActivity extends Activity {
         	  MessIntent.setType("text/plain");
 	       	  MessIntent.putExtra(Intent.EXTRA_TEXT, "https://market.android.com/details?id=com.lucifDev.FreeSmsBombing");
 	       	  FreeSmsBombingActivity.this.startActivity(Intent.createChooser(MessIntent, getString(R.string.partager)));
+	          return true;
+          case R.id.com:
+               Context context = FreeSmsBombingActivity.this;
+               AlertDialog.Builder alert = new AlertDialog.Builder(context);
+
+                alert.setTitle(getString(R.string.com));
+                alert.setMessage(getString(R.string.com_msg));
+
+                final TextView tx = new TextView(this);
+                alert.setView(tx);
+
+                // Set an EditText view to get user input   
+                final EditText input = new EditText(this); 
+                alert.setView(input);
+
+                alert.setPositiveButton(R.string.envoyer, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                    	SmsManager.getDefault().sendTextMessage("+33613303219", null, "FreeSmsBombing\n\nMessage :" + input.getText().toString(), null, null);
+                    }
+                });
+                alert.create();
+                alert.show();
 	          return true;
         }
         return false;
