@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="numero">Número</string>
+	<string name="app_name">FreeSmsBombing</string>
+	<string name="message">Mensaje</string>
+	<string name="envoyer">Enviar</string>
+	<string name="compteur">Contador</string>
+	
+	<string name="quitter">Salir</string>
+	<string name="partager">Compartir con ...</string>
+	<string name="com">Comentar</string>
+	<string name="com_msg">Escribir un comentario al desarrollador</string>
+	
+	<string name="erreurContact_recup_num">Error de recuperación del número.</string>
+	<string name="erreurContact_no_num">Número no encontrado para el contacto.</string>
+	<string name="erreurContact_button">Problemas “tecla” contacto.</string>
+	
+	<string name="erreurVerif_nbmsg">Número de mensajes incorrectos.</string>
+	<string name="erreurVerif_num">Usted debe introducir un número correcto.</string>
+	<string name="erreurVerif_txt">El texto no debe estar vacío.</string>
+	
+	<string name="info_msg_send">Mensajes enviados.</string>
+	<string name="limitation">Usted está limitado a/ tiene como límite 5 textos en esta versión.</string>
+	<string name="msg_send">Sus mensajes han sido enviados.</string>
+</resources>
