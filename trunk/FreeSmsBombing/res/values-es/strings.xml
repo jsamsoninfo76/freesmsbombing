@@ -10,6 +10,10 @@
 	<string name="partager">Compartir con ...</string>
 	<string name="com">Comentar</string>
 	<string name="com_msg">Escribir un comentario al desarrollador</string>
+	<string name="aPropos">Sobre ...</string>
+	<string name="aPropos_msg">Soy un estudiante de Francia y sólo quiero que sepas que yo he hecho todo esto solo para mejorar mis conocimientos acerca de cómo hacer una aplicación para Android. Si usted tiene algún comentario u observación alguna, por favor utilice la parte del comentario en el menú y se me informará directamente. aplausos</string>
+	<string name="annuler">Cancelar</string>
+	<string name="ok">OK</string>
 	
 	<string name="erreurContact_recup_num">Error de recuperación del número.</string>
 	<string name="erreurContact_no_num">Número no encontrado para el contacto.</string>

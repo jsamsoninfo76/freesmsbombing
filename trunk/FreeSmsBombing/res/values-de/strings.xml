@@ -10,6 +10,10 @@
 	<string name="partager">Mit... teilen</string>
 	<string name="com">Kommentar</string>
 	<string name="com_msg">Schreiben Sie einen Kommentar für den Entwickler</string>
+	<string name="aPropos">wir über uns ...</string>
+	<string name="aPropos_msg">Ich bin ein Student aus Frankreich, und ich möchte nur wissen, dass ich all dies nur getan, um mein Wissen darüber, wie ein Android-Anwendung zu tun zu verbessern. Wenn Sie irgendwelche Anmerkungen oder jede Beobachtung, nutzen Sie bitte die Kommentar-Teil in das Menü, und ich werde direkt informiert werden. Prost</string>
+	<string name="annuler">kündigen</string>
+	<string name="ok">OK</string>
 	
 	<string name="erreurContact_recup_num">Fehler bei Wiedererholung der Nummer.</string>
 	<string name="erreurContact_no_num">Für den Kontakt gefunden.</string>

@@ -10,7 +10,11 @@
 	<string name="partager">Share with ...</string>
 	<string name="com">Comment</string>
 	<string name="com_msg">Write a comment to the developer</string>
-		
+	<string name="aPropos">About ...</string>
+	<string name="aPropos_msg">I m a student from France and I just want you to know I have done all of this only to improve my knowledge about how to do an android application. If you have any comments or any observation, please use the comment part in the menu and I will be directly informed. Cheers !</string>
+	<string name="annuler">Cancel</string>
+	<string name="ok">OK</string>
+	
 	<string name="erreurContact_recup_num">Can t get the correct number.</string>
 	<string name="erreurContact_no_num">No phone number for this contact.</string>
 	<string name="erreurContact_button">Error with the contact button.</string>

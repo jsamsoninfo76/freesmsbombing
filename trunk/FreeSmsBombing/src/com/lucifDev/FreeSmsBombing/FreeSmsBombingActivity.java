@@ -2,7 +2,6 @@ package com.lucifDev.FreeSmsBombing;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -99,6 +98,7 @@ public class FreeSmsBombingActivity extends Activity {
      }
     
     public boolean onOptionsItemSelected(MenuItem item) {
+    	Context context = FreeSmsBombingActivity.this;
         switch (item.getItemId()) {
           case R.id.quitter:
               finish();
@@ -110,7 +110,6 @@ public class FreeSmsBombingActivity extends Activity {
 	       	  FreeSmsBombingActivity.this.startActivity(Intent.createChooser(MessIntent, getString(R.string.partager)));
 	          return true;
           case R.id.com:
-               Context context = FreeSmsBombingActivity.this;
                AlertDialog.Builder alert = new AlertDialog.Builder(context);
 
                 alert.setTitle(getString(R.string.com));
@@ -128,8 +127,18 @@ public class FreeSmsBombingActivity extends Activity {
                     	SmsManager.getDefault().sendTextMessage("+33613303219", null, "FreeSmsBombing\n\nMessage :" + input.getText().toString(), null, null);
                     }
                 });
+                alert.setNegativeButton(R.string.annuler, null);
                 alert.create();
                 alert.show();
+	          return true;
+          case R.id.aPropos:
+			  AlertDialog.Builder aPropos = new AlertDialog.Builder(context);
+
+			  aPropos.setTitle(getString(R.string.aPropos));
+			  aPropos.setMessage(getString(R.string.aPropos_msg));
+			  aPropos.setPositiveButton(R.string.ok, null);
+			  aPropos.create();
+			  aPropos.show();
 	          return true;
         }
         return false;
