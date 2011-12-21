@@ -27,10 +27,11 @@ import com.google.ads.AdRequest;
 import com.google.ads.AdView;
 
 public class FreeSmsBombingActivity extends Activity {
+	
 	/* VARIABLE POUR L'INTERFACE GRAPHIQUE*/
 	private Button contact;
 	private EditText numero,cpt,message;
-	//test
+	
 	/* VARIABLE POUR LA RECUPERATION DES CONTACTS */
 	private static final int CONTACT_PICKER_RESULT = 1001;
 	private static final String DEBUG_TAG = "InviteActivity";
@@ -63,10 +64,6 @@ public class FreeSmsBombingActivity extends Activity {
          *******************************/
         AdView adView = (AdView)this.findViewById(R.id.adView);
         adView.loadAd(new AdRequest());
-        
-        
-        
-        
         
         //Ajout du premier Listener sur le boutton contact pour les afficher
         contact.setOnClickListener(new OnClickListener(){
@@ -140,6 +137,15 @@ public class FreeSmsBombingActivity extends Activity {
 			  aPropos.create();
 			  aPropos.show();
 	          return true;
+          case R.id.qrCode:
+			  AlertDialog.Builder qrCode = new AlertDialog.Builder(context);
+
+			  qrCode.setTitle("QR Code");
+			  qrCode.setMessage(getString(R.string.aPropos_msg));
+			  qrCode.setPositiveButton(R.string.ok, null);
+			  qrCode.create();
+			  qrCode.show();
+	          return true;
         }
         return false;
      }
@@ -198,8 +204,6 @@ public class FreeSmsBombingActivity extends Activity {
 	        }
 	}
 	 
-	/** fake operation for testing purpose 
-	 * @throws InterruptedException */
 	protected ErrorStatus sendSms() throws InterruptedException {
 	    	//On récupère ce qui a été entré dans les EditText
 			final String num = numero.getText().toString();
