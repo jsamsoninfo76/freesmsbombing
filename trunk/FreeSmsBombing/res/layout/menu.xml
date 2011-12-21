@@ -21,4 +21,9 @@
         android:icon="@android:drawable/ic_menu_info_details"
         android:title="@string/aPropos"></item>
 
+    <item
+        android:id="@+id/qrCode"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="QR"></item>
+
 </menu>
