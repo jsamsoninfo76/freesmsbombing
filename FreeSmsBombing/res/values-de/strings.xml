@@ -24,6 +24,6 @@
 	<string name="erreurVerif_txt">Bitte kein leerer Text.</string>
 	
 	<string name="info_msg_send">Gesendete Nachricht.</string>
-	<string name="limitation">In dieser Version werden nur 5 SMS erlaubt.</string>
+	<string name="limitation">In dieser Version werden nur 10 SMS erlaubt.</string>
 	<string name="msg_send">Ihre Nachrichten wurden gesendet.</string>
 </resources>

@@ -46,6 +46,7 @@ public class FreeSmsBombingActivity extends Activity {
 	public static final int MSG_CNF = 1;
 	public static final int MSG_IND = 2;
 	public static final String TAG = "ProgressBarActivity";
+	private int limit = 10;
 	
 	//private Layout 
 	public void onCreate(Bundle savedInstanceState) {
@@ -137,15 +138,6 @@ public class FreeSmsBombingActivity extends Activity {
 			  aPropos.create();
 			  aPropos.show();
 	          return true;
-          case R.id.qrCode:
-			  AlertDialog.Builder qrCode = new AlertDialog.Builder(context);
-
-			  qrCode.setTitle("QR Code");
-			  qrCode.setMessage(getString(R.string.aPropos_msg));
-			  qrCode.setPositiveButton(R.string.ok, null);
-			  qrCode.create();
-			  qrCode.show();
-	          return true;
         }
         return false;
      }
@@ -214,10 +206,10 @@ public class FreeSmsBombingActivity extends Activity {
 				nbMsg = Integer.parseInt(cpt.getText().toString());
 				
 				//Limitation de la version gratuite=5
-				if (nbMsg > 5)
+				if (nbMsg > limit)
 				{
-					Toast.makeText(FreeSmsBombingActivity.this, "Vous êtes limité à 5 textos.", Toast.LENGTH_SHORT).show();
-					nbMsg = 5;
+					Toast.makeText(FreeSmsBombingActivity.this,getString(R.string.limitation), Toast.LENGTH_SHORT).show();
+					nbMsg = limit;
 				}
 				
 			}catch(NumberFormatException e){

@@ -24,6 +24,6 @@
 	<string name="erreurVerif_txt">You have to write something in the message.</string>
 	
 	<string name="info_msg_send">Messages send.</string>
-	<string name="limitation">Your are limited with 5 messages with this version.</string>
+	<string name="limitation">Your are limited with 10 messages with this version.</string>
     <string name="msg_send">Your messages has been send.</string>
 </resources>
