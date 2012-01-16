@@ -24,6 +24,6 @@
 	<string name="erreurVerif_txt">Le texte ne doit pas être vide.</string>
 	
 	<string name="info_msg_send">Messages envoyés.</string>
-	<string name="limitation">Vous êtes limité à 5 textos dans cette version.</string>
+	<string name="limitation">Vous êtes limité à 10 textos dans cette version.</string>
 	<string name="msg_send">Vos messages ont été envoyé.</string>
 </resources>
